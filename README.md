@@ -1,59 +1,37 @@
-# SubclubSite
+# SubClub Site
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.5.
+Site comercial do **SubClub** — plataforma SaaS para gestão de clubes de assinatura — desenvolvido com **Angular 19** e **Angular Material**.
 
-## Development server
+## Pré-requisitos
 
-To start a local development server, run:
+- **Node.js**: 22+
+- **npm**: 10+
 
-```bash
-ng serve
-```
+## Primeiros Passos
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+1. **Instalar dependências:**
+   ```bash
+   npm install
+   ```
 
-## Code scaffolding
+2. **Executar em desenvolvimento:**
+   ```bash
+   npm start
+   ```
+   Acesse `http://localhost:4200`.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+3. **Executar build e testes:**
+   ```bash
+   npm run build
+   npm run test:ci
+   ```
 
-```bash
-ng generate component component-name
-```
+## Documentação e Fluxo de Agentes
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- Regras e orquestração de agentes: [`.agents/rules/`](.agents/rules/) e [`CLAUDE.md`](CLAUDE.md).
+- Documentação técnica e de produto (fonte da verdade):
+  - [`docs/design/architecture.md`](docs/design/architecture.md)
+  - [`docs/design/ui-and-theming.md`](docs/design/ui-and-theming.md)
+  - [`docs/design/content-and-sections.md`](docs/design/content-and-sections.md)
+  - [`docs/development/setup-and-testing.md`](docs/development/setup-and-testing.md)
+  - [`docs/changes/`](docs/changes/)
