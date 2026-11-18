@@ -1,0 +1,25 @@
+<section id="recursos" class="section">
+  <div class="container">
+    <app-section-header
+      eyebrow="Recursos"
+      title="Tudo o que seu clube de assinaturas precisa em um só lugar"
+      subtitle="Da base de assinantes ao catálogo de produtos, o SubClub substitui controles manuais por uma operação estruturada."
+    />
+
+    <div class="benefits-grid">
+      @for (benefit of benefits; track benefit.title) {
+        <mat-card class="benefit-card">
+          <div class="benefit-card__top">
+            <span class="benefit-card__icon">
+              <mat-icon aria-hidden="true">{{ benefit.icon }}</mat-icon>
+            </span>
+            <span class="benefit-card__tag">{{ benefit.tag }}</span>
+          </div>
+
+          <h3 class="benefit-card__title">{{ benefit.title }}</h3>
+          <p class="benefit-card__description">{{ benefit.description }}</p>
+        </mat-card>
+      }
+    </div>
+  </div>
+</section>

@@ -1,0 +1,69 @@
+<header class="navbar-wrapper">
+  <mat-toolbar class="navbar">
+    <div class="container navbar__inner">
+      <a href="#inicio" class="navbar__brand" aria-label="SubClub início" (click)="closeMobileMenu()">
+        <span class="navbar__logo">
+          <mat-icon aria-hidden="true">subscriptions</mat-icon>
+        </span>
+        <span class="navbar__name">SubClub</span>
+      </a>
+
+      <nav class="navbar__links" aria-label="Navegação principal">
+        @for (item of navItems; track item.anchor) {
+          <a class="navbar__link" [href]="'#' + item.anchor">{{ item.label }}</a>
+        }
+      </nav>
+
+      <div class="navbar__actions">
+        <button
+          mat-icon-button
+          type="button"
+          (click)="themeService.toggleTheme()"
+          [attr.aria-label]="themeService.isDark() ? 'Ativar tema claro' : 'Ativar tema escuro'"
+        >
+          <mat-icon>{{ themeService.isDark() ? 'light_mode' : 'dark_mode' }}</mat-icon>
+        </button>
+
+        <a mat-flat-button color="primary" href="#planos" class="navbar__cta">
+          Ver planos
+        </a>
+
+        <button
+          mat-icon-button
+          type="button"
+          class="navbar__mobile-toggle"
+          (click)="toggleMobileMenu()"
+          [attr.aria-expanded]="mobileMenuOpen()"
+          aria-label="Abrir menu de navegação"
+        >
+          <mat-icon>{{ mobileMenuOpen() ? 'close' : 'menu' }}</mat-icon>
+        </button>
+      </div>
+    </div>
+  </mat-toolbar>
+
+  @if (mobileMenuOpen()) {
+    <nav class="navbar__mobile-drawer" aria-label="Menu móvel">
+      <div class="container navbar__mobile-content">
+        @for (item of navItems; track item.anchor) {
+          <a
+            class="navbar__mobile-link"
+            [href]="'#' + item.anchor"
+            (click)="closeMobileMenu()"
+          >
+            {{ item.label }}
+          </a>
+        }
+        <a
+          mat-flat-button
+          color="primary"
+          href="#planos"
+          class="navbar__mobile-cta"
+          (click)="closeMobileMenu()"
+        >
+          Ver planos
+        </a>
+      </div>
+    </nav>
+  }
+</header>

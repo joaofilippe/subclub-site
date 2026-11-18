@@ -1,0 +1,57 @@
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.step-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  padding: 28px 24px;
+  box-shadow: var(--shadow-card);
+}
+
+.step-card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.step-card__number {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  letter-spacing: -0.02em;
+}
+
+.step-card__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  background: var(--bg-primary-tint);
+  color: var(--color-primary);
+}
+
+.step-card__title {
+  margin: 0 0 10px;
+  font-size: 1.12rem;
+  font-weight: 600;
+}
+
+.step-card__description {
+  margin: 0;
+  font-size: 0.94rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
+@media (max-width: 900px) {
+  .steps-grid {
+    grid-template-columns: 1fr;
+  }
+}

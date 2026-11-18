@@ -1,0 +1,12 @@
+<app-navbar />
+
+<main>
+  <app-hero-section (startRequested)="openInterestDialog()" />
+  <app-benefits-section />
+  <app-how-it-works-section />
+  <app-pricing-section (planSelected)="openInterestDialog($event)" />
+  <app-faq-section />
+  <app-cta-banner-section (startRequested)="openInterestDialog()" />
+</main>
+
+<app-footer />

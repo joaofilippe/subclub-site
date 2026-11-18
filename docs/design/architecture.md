@@ -14,13 +14,16 @@ src/app/
 │   └── landing-content.ts  # Dados tipados de seções, benefícios, planos, FAQ e navegação
 ├── shared/
 │   ├── models/             # Interfaces TypeScript (Plan, Benefit, FaqItem, NavItem, etc.)
-│   └── components/         # Componentes reutilizáveis (ex.: section-header, brand-logo)
+│   └── components/         # Componentes reutilizáveis (ex.: section-header)
 ├── layout/
 │   ├── navbar/             # Barra de navegação fixa, âncoras, toggle de tema e CTA
 │   └── footer/             # Rodapé institucional com links e informações de contato
 └── features/
     └── landing/
+        ├── landing.routes.ts              # Rotas lazy da landing page + providers de dialog/snackbar
         ├── landing-page.component.ts      # Container da página inicial
+        ├── components/
+        │   └── plan-interest-dialog/      # Diálogo Angular Material de solicitação de acesso
         └── sections/
             ├── hero/                      # Apresentação principal, proposta de valor e CTAs
             ├── benefits/                  # Benefícios e recursos da plataforma SubClub

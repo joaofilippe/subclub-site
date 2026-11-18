@@ -32,3 +32,5 @@ Alinhado ao domínio implementado no backend (`C:\projects\go\sub-club`), o SubC
    - Acordeão com `mat-accordion` / `mat-expansion-panel` respondendo dúvidas reais de quem quer montar ou migrar um clube de assinaturas para o SubClub.
 7. **CTA Final + Footer**:
    - Chamada final reforçando início rápido e rodapé com links de seção e informações institucionais do SubClub.
+8. **Diálogo de Solicitação de Acesso (`PlanInterestDialogComponent`)**:
+   - Acionado pelos CTAs do Hero, Planos e Banner Final (`MatDialog` + `ReactiveFormsModule`), pré-selecionando o plano/ciclo escolhido e exibindo confirmação via `MatSnackBar`.
