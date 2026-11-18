@@ -1,0 +1,46 @@
+<h2 mat-dialog-title>Começar com o SubClub</h2>
+
+<mat-dialog-content class="dialog-content">
+  <div class="dialog-plan-pill">
+    Plano selecionado: <strong>{{ selectedPlanLabel }}</strong>
+  </div>
+
+  <p class="dialog-subtitle">
+    Preencha seus dados para ativarmos o ambiente de avaliação da sua marca.
+  </p>
+
+  <form [formGroup]="form" (ngSubmit)="submit()" class="dialog-form" id="plan-interest-form">
+    <mat-form-field appearance="outline">
+      <mat-label>Seu nome</mat-label>
+      <input matInput formControlName="name" placeholder="Ex.: Ana Silva" />
+      @if (form.controls.name.hasError('required')) {
+        <mat-error>Informe seu nome</mat-error>
+      }
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>E-mail corporativo</mat-label>
+      <input matInput type="email" formControlName="email" placeholder="ana@suamarca.com.br" />
+      @if (form.controls.email.hasError('required')) {
+        <mat-error>Informe seu e-mail</mat-error>
+      } @else if (form.controls.email.hasError('email')) {
+        <mat-error>E-mail inválido</mat-error>
+      }
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Nome do clube ou empresa</mat-label>
+      <input matInput formControlName="company" placeholder="Ex.: Café do Norte" />
+      @if (form.controls.company.hasError('required')) {
+        <mat-error>Informe o nome do seu clube</mat-error>
+      }
+    </mat-form-field>
+  </form>
+</mat-dialog-content>
+
+<mat-dialog-actions align="end">
+  <button mat-button type="button" mat-dialog-close>Cancelar</button>
+  <button mat-flat-button color="primary" type="submit" form="plan-interest-form">
+    Solicitar acesso
+  </button>
+</mat-dialog-actions>

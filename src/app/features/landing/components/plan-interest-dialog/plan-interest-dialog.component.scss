@@ -1,0 +1,32 @@
+.dialog-content {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  min-width: 340px;
+}
+
+.dialog-plan-pill {
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: var(--bg-primary-tint);
+  color: var(--color-primary);
+  font-size: 0.88rem;
+}
+
+.dialog-subtitle {
+  margin: 0;
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+}
+
+.dialog-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+@media (max-width: 480px) {
+  .dialog-content {
+    min-width: 0;
+  }
+}

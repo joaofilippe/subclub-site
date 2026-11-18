@@ -1,0 +1,94 @@
+<section id="planos" class="section">
+  <div class="container">
+    <app-section-header
+      eyebrow="Planos e preços"
+      title="Escolha o plano ideal para o momento do seu clube"
+      subtitle="Valores transparentes, sem comissão sobre suas vendas e com upgrade simples conforme sua base cresce."
+    />
+
+    <div class="pricing__toggle-wrap">
+      <mat-button-toggle-group
+        [value]="billingCycle()"
+        (change)="setBillingCycle($event.value)"
+        aria-label="Ciclo de cobrança"
+      >
+        <mat-button-toggle value="monthly">Cobrança mensal</mat-button-toggle>
+        <mat-button-toggle value="annual">
+          Cobrança anual
+          <span class="pricing__discount-pill">-20%</span>
+        </mat-button-toggle>
+      </mat-button-toggle-group>
+    </div>
+
+    <div class="pricing-grid">
+      @for (item of plansWithPrices(); track item.plan.id) {
+        <mat-card
+          class="plan-card"
+          [class.plan-card--highlighted]="item.plan.highlighted"
+        >
+          <div class="plan-card__header">
+            <div class="plan-card__title-row">
+              <h3 class="plan-card__name">{{ item.plan.name }}</h3>
+              @if (item.plan.badge) {
+                <span class="plan-card__badge">{{ item.plan.badge }}</span>
+              }
+            </div>
+            <p class="plan-card__description">{{ item.plan.description }}</p>
+          </div>
+
+          <div class="plan-card__price-row">
+            <span class="plan-card__currency">R$</span>
+            <span class="plan-card__price">{{ item.displayPrice }}</span>
+            <span class="plan-card__period">/mês</span>
+          </div>
+
+          @if (isAnnual()) {
+            <span class="plan-card__billing-note">
+              Cobrança anual equivalente a R$ {{ item.displayPrice * 12 }}/ano
+            </span>
+          }
+
+          <div class="plan-card__limits">
+            @for (limit of item.plan.limits; track limit) {
+              <div class="plan-card__limit-item">
+                <mat-icon aria-hidden="true">bolt</mat-icon>
+                <span>{{ limit }}</span>
+              </div>
+            }
+          </div>
+
+          <ul class="plan-card__features">
+            @for (feature of item.plan.features; track feature) {
+              <li class="plan-card__feature-item">
+                <mat-icon aria-hidden="true">check</mat-icon>
+                <span>{{ feature }}</span>
+              </li>
+            }
+          </ul>
+
+          @if (item.plan.highlighted) {
+            <button
+              mat-flat-button
+              color="primary"
+              type="button"
+              class="plan-card__cta"
+              (click)="selectPlan(item.plan, item.displayPrice)"
+            >
+              {{ item.plan.ctaLabel }}
+            </button>
+          } @else {
+            <button
+              mat-stroked-button
+              color="primary"
+              type="button"
+              class="plan-card__cta"
+              (click)="selectPlan(item.plan, item.displayPrice)"
+            >
+              {{ item.plan.ctaLabel }}
+            </button>
+          }
+        </mat-card>
+      }
+    </div>
+  </div>
+</section>
