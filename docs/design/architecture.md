@@ -14,7 +14,7 @@ src/app/
 │   └── landing-content.ts  # Dados tipados de seções, benefícios, planos, FAQ e navegação
 ├── shared/
 │   ├── models/             # Interfaces TypeScript (Plan, Benefit, FaqItem, NavItem, etc.)
-│   └── components/         # Componentes reutilizáveis (ex.: section-header)
+│   └── components/         # Componentes reutilizáveis (brand-logo, section-header)
 ├── layout/
 │   ├── navbar/             # Barra de navegação fixa, âncoras, toggle de tema e CTA
 │   └── footer/             # Rodapé institucional com links e informações de contato

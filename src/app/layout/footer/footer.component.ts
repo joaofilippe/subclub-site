@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
-import { MatIconModule } from '@angular/material/icon';
 import { FOOTER_COLUMNS } from '../../data/landing-content';
+import { BrandLogoComponent } from '../../shared/components/brand-logo/brand-logo.component';
 
 @Component({
   selector: 'app-footer',
   standalone: true,
-  imports: [MatIconModule],
+  imports: [BrandLogoComponent],
   templateUrl: './footer.component.html',
   styleUrl: './footer.component.scss',
 })

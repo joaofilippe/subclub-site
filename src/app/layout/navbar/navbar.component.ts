@@ -4,11 +4,12 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { ThemeService } from '../../core/theme/theme.service';
 import { NAV_ITEMS } from '../../data/landing-content';
+import { BrandLogoComponent } from '../../shared/components/brand-logo/brand-logo.component';
 
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [MatToolbarModule, MatButtonModule, MatIconModule],
+  imports: [MatToolbarModule, MatButtonModule, MatIconModule, BrandLogoComponent],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.scss',
 })

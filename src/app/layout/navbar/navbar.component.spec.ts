@@ -18,10 +18,11 @@ describe('NavbarComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should render brand name and navigation links', () => {
+  it('should render brand logo and navigation links', () => {
     const el: HTMLElement = fixture.nativeElement;
 
-    expect(el.querySelector('.navbar__name')?.textContent?.trim()).toBe('SubClub');
+    expect(el.querySelector('app-brand-logo')).not.toBeNull();
+    expect(el.querySelector('.brand-logo__name')?.textContent?.trim()).toBe('SubClub');
     expect(el.querySelectorAll('.navbar__link').length).toBe(4);
   });
 
