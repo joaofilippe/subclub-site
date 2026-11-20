@@ -17,9 +17,12 @@ describe('HeroSectionComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should render primary headline and trust points without preview panel', () => {
+  it('should render primary headline, background image, and trust points without preview panel', () => {
     const el: HTMLElement = fixture.nativeElement;
+    const bg = el.querySelector('.hero__bg') as HTMLImageElement;
 
+    expect(bg).not.toBeNull();
+    expect(bg.getAttribute('src')).toBe('images/background.jpg');
     expect(el.querySelector('h1')?.textContent).toContain('clube de assinaturas');
     expect(el.querySelectorAll('.hero__trust-item').length).toBe(3);
     expect(el.querySelector('.preview-card')).toBeNull();
