@@ -36,8 +36,9 @@ Sempre utilize as CSS custom properties em vez de cores hexadecimais hardcoded n
 
 ---
 
-## Responsividade e Acessibilidade
+## Responsividade, Unidades e Acessibilidade
 
+- **Unidades CSS**: Utilizar `rem` para espaçamentos, dimensões, tipografia e raios de borda (`1rem = 16px`), mantendo `px` apenas para bordas finas (`1px`), sombras, filtros (`blur`) e `@media` breakpoints.
 - **Breakpoints**:
   - Desktop: `> 1024px` (largura máxima de conteúdo `1200px` centralizada).
   - Tablet: `<= 1024px`.

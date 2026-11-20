@@ -1,13 +1,13 @@
 .dialog-content {
   display: flex;
   flex-direction: column;
-  gap: 14px;
-  min-width: 340px;
+  gap: 0.875rem;
+  min-width: 21.25rem;
 }
 
 .dialog-plan-pill {
-  padding: 10px 12px;
-  border-radius: 10px;
+  padding: 0.625rem 0.75rem;
+  border-radius: 0.625rem;
   background: var(--bg-primary-tint);
   color: var(--color-primary);
   font-size: 0.88rem;
@@ -22,7 +22,7 @@
 .dialog-form {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 0.5rem;
 }
 
 @media (max-width: 480px) {

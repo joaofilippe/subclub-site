@@ -19,9 +19,9 @@ import { Component, input } from '@angular/core';
       .section-header {
         display: flex;
         flex-direction: column;
-        gap: 12px;
-        margin-bottom: 48px;
-        max-width: 680px;
+        gap: 0.75rem;
+        margin-bottom: 3rem;
+        max-width: 42.5rem;
       }
 
       .section-header--center {
@@ -33,8 +33,8 @@ import { Component, input } from '@angular/core';
       .section-header__eyebrow {
         display: inline-flex;
         align-items: center;
-        padding: 4px 12px;
-        border-radius: 999px;
+        padding: 0.25rem 0.75rem;
+        border-radius: 999rem;
         font-size: 0.75rem;
         font-weight: 600;
         letter-spacing: 0.06em;

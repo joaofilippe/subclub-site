@@ -18,7 +18,7 @@ describe('BrandLogoComponent', () => {
     const img = el.querySelector('.brand-logo__img') as HTMLImageElement;
 
     expect(img).not.toBeNull();
-    expect(img.getAttribute('src')).toBe('images/Logo.svg');
+    expect(img.getAttribute('src')).toBe('images/logo.svg');
     expect(el.querySelector('.brand-logo__name')?.textContent?.trim()).toBe('SubClub');
   });
 

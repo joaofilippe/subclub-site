@@ -7,7 +7,7 @@ import { Component, input } from '@angular/core';
     <span class="brand-logo" [class]="'brand-logo brand-logo--' + size()">
       <img
         class="brand-logo__img"
-        src="images/Logo.svg"
+        src="images/logo.svg"
         alt="SubClub"
         loading="eager"
         decoding="async"
@@ -27,13 +27,13 @@ import { Component, input } from '@angular/core';
       .brand-logo {
         display: inline-flex;
         align-items: center;
-        gap: 8px;
+        gap: 0.5rem;
       }
 
       .brand-logo__img {
         display: block;
-        width: 56px;
-        height: 56px;
+        width: 3.5rem;
+        height: 3.5rem;
         object-fit: contain;
         flex-shrink: 0;
       }
@@ -47,8 +47,8 @@ import { Component, input } from '@angular/core';
       }
 
       .brand-logo--sm .brand-logo__img {
-        width: 44px;
-        height: 44px;
+        width: 2.75rem;
+        height: 2.75rem;
       }
 
       .brand-logo--sm .brand-logo__name {
@@ -56,8 +56,8 @@ import { Component, input } from '@angular/core';
       }
 
       .brand-logo--lg .brand-logo__img {
-        width: 72px;
-        height: 72px;
+        width: 4.5rem;
+        height: 4.5rem;
       }
 
       .brand-logo--lg .brand-logo__name {
