@@ -140,14 +140,14 @@ export const PRICING_PLANS: PricingPlan[] = [
 
 export const FAQ_ITEMS: FaqItem[] = [
   {
-    question: 'Para que tipos de clube de assinatura o SubClub foi feito?',
+    question: 'Para que tipos de clube de assinatura o BeanByte foi feito?',
     answer:
-      'O SubClub atende tanto clubes de produtos físicos recorrentes — como cafés especiais, vinhos, livros, pet e cosméticos — quanto clubes de benefícios e comunidades que precisam gerenciar assinantes, planos e entregas.',
+      'O BeanByte atende tanto clubes de produtos físicos recorrentes — como cafés especiais, vinhos, livros, pet e cosméticos — quanto clubes de benefícios e comunidades que precisam gerenciar assinantes, planos e entregas.',
   },
   {
     question: 'Os dados da minha empresa ficam misturados com os de outros clientes?',
     answer:
-      'Não. O SubClub utiliza isolamento lógico dedicado por conta (multi-tenant), mantendo assinantes, planos, produtos e assinaturas da sua marca separados de qualquer outra empresa na plataforma.',
+      'Não. O BeanByte utiliza isolamento lógico dedicado por conta (multi-tenant), mantendo assinantes, planos, produtos e assinaturas da sua marca separados de qualquer outra empresa na plataforma.',
   },
   {
     question: 'Posso trocar de plano conforme meu clube cresce?',
@@ -155,12 +155,12 @@ export const FAQ_ITEMS: FaqItem[] = [
       'Sim. Você pode começar no Starter e evoluir para o Pro ou Scale a qualquer momento, aumentando os limites de assinantes, planos e catálogo sem perder histórico.',
   },
   {
-    question: 'O SubClub cobra comissão ou taxa percentual sobre cada venda?',
+    question: 'O BeanByte cobra comissão ou taxa percentual sobre cada venda?',
     answer:
       'Não cobramos comissão escondida sobre o seu faturamento. Você paga apenas a assinatura fixa do plano escolhido, mantendo previsibilidade total na sua margem.',
   },
   {
-    question: 'Já tenho assinantes em planilhas. Consigo migrar para o SubClub?',
+    question: 'Já tenho assinantes em planilhas. Consigo migrar para o BeanByte?',
     answer:
       'Sim. Nossa estrutura foi pensada para facilitar o cadastro inicial de produtos, planos e base de clientes, e no plano Scale oferecemos acompanhamento assistido na migração.',
   },

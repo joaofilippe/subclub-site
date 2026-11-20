@@ -8,12 +8,12 @@ import { Component, input } from '@angular/core';
       <img
         class="brand-logo__img"
         src="images/logo.svg"
-        alt="SubClub"
+        alt="BeanByte"
         loading="eager"
         decoding="async"
       />
       @if (showName()) {
-        <span class="brand-logo__name">SubClub</span>
+        <span class="brand-logo__name">BeanByte</span>
       }
     </span>
   `,

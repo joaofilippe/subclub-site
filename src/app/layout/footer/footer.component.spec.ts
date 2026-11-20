@@ -13,11 +13,11 @@ describe('FooterComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should display SubClub brand logo and footer columns', () => {
+  it('should display BeanByte brand logo and footer columns', () => {
     const el: HTMLElement = fixture.nativeElement;
 
     expect(el.querySelector('app-brand-logo')).not.toBeNull();
-    expect(el.querySelector('.brand-logo__name')?.textContent?.trim()).toBe('SubClub');
+    expect(el.querySelector('.brand-logo__name')?.textContent?.trim()).toBe('BeanByte');
     expect(el.querySelectorAll('.footer__column').length).toBe(2);
   });
 });

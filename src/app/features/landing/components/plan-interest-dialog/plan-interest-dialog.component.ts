@@ -45,7 +45,7 @@ export class PlanInterestDialogComponent {
 
   get selectedPlanLabel(): string {
     if (!this.data?.plan) {
-      return 'Demonstração SubClub';
+      return 'Demonstração BeanByte';
     }
     const cycleLabel = this.data.billingCycle === 'annual' ? 'anual' : 'mensal';
     return `${this.data.plan.name} (R$ ${this.data.displayPrice}/mês • ${cycleLabel})`;

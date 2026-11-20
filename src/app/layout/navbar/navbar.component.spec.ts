@@ -22,7 +22,7 @@ describe('NavbarComponent', () => {
     const el: HTMLElement = fixture.nativeElement;
 
     expect(el.querySelector('app-brand-logo')).not.toBeNull();
-    expect(el.querySelector('.brand-logo__name')?.textContent?.trim()).toBe('SubClub');
+    expect(el.querySelector('.brand-logo__name')?.textContent?.trim()).toBe('BeanByte');
     expect(el.querySelectorAll('.navbar__link').length).toBe(4);
   });
 

@@ -10,7 +10,7 @@ describe('SectionHeaderComponent', () => {
     }).compileComponents();
 
     fixture = TestBed.createComponent(SectionHeaderComponent);
-    fixture.componentRef.setInput('title', 'Recursos do SubClub');
+    fixture.componentRef.setInput('title', 'Recursos do BeanByte');
     fixture.componentRef.setInput('eyebrow', 'Plataforma');
     fixture.componentRef.setInput('subtitle', 'Tudo para operar seu clube.');
     fixture.detectChanges();
@@ -20,7 +20,7 @@ describe('SectionHeaderComponent', () => {
     const el: HTMLElement = fixture.nativeElement;
 
     expect(el.querySelector('.section-header__eyebrow')?.textContent?.trim()).toBe('Plataforma');
-    expect(el.querySelector('.section-header__title')?.textContent?.trim()).toBe('Recursos do SubClub');
+    expect(el.querySelector('.section-header__title')?.textContent?.trim()).toBe('Recursos do BeanByte');
     expect(el.querySelector('.section-header__subtitle')?.textContent?.trim()).toBe('Tudo para operar seu clube.');
   });
 });

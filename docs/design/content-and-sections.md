@@ -1,12 +1,12 @@
 # Conteúdo e Seções do Site Comercial
 
-O `subclub-site` apresenta e vende o **SubClub**, uma plataforma SaaS B2B para empresas que operam clubes de assinatura recorrente.
+O `subclub-site` apresenta e vende o **BeanByte**, uma plataforma SaaS B2B para empresas que operam clubes de assinatura recorrente.
 
 ---
 
-## O Produto (SubClub)
+## O Produto (BeanByte)
 
-Alinhado ao domínio implementado no backend (`C:\projects\go\sub-club`), o SubClub resolve a operação completa de clubes de assinatura:
+Alinhado ao domínio implementado no backend (`C:\projects\go\sub-club`), o BeanByte resolve a operação completa de clubes de assinatura:
 
 - **Gestão de Assinantes (`Customers`)**: Cadastro completo, status de assinatura e histórico.
 - **Planos e Catálogo (`Plans` & `Products`)**: Criação de planos flexíveis, combinação de produtos e controle de entregas/envios.
@@ -18,7 +18,7 @@ Alinhado ao domínio implementado no backend (`C:\projects\go\sub-club`), o SubC
 ## Estrutura da Landing Page (`v1`)
 
 1. **Navbar (`#topo`)**:
-   - Marca **SubClub**, links âncora (`Recursos`, `Como funciona`, `Planos`, `FAQ`), alternador de tema (claro/escuro) e CTA principal (`Começar agora`).
+   - Marca **BeanByte**, links âncora (`Recursos`, `Como funciona`, `Planos`, `FAQ`), alternador de tema (claro/escuro) e CTA principal (`Ver planos`).
 2. **Hero (`#inicio`)**:
    - Badge de posicionamento, headline centralizada sobre lançar e escalar um clube de assinaturas sem planilhas, subtítulo focado em gestão de assinantes, planos, produtos e entregas, CTAs (`Começar agora` e `Conhecer recursos`) e pontos de confiança.
 3. **Benefícios / Recursos (`#recursos`)**:
@@ -29,8 +29,8 @@ Alinhado ao domínio implementado no backend (`C:\projects\go\sub-club`), o SubC
    - Alternância **Mensal / Anual** (com desconto anual de 20% exibido claramente via Signals).
    - 3 faixas comerciais coerentes com os limites de `AccountPlan` (`Starter`, `Pro` — destacado como mais popular — e `Scale`), exibindo limites de clientes, planos e produtos.
 6. **FAQ (`#faq`)**:
-   - Acordeão com `mat-accordion` / `mat-expansion-panel` respondendo dúvidas reais de quem quer montar ou migrar um clube de assinaturas para o SubClub.
+   - Acordeão com `mat-accordion` / `mat-expansion-panel` respondendo dúvidas reais de quem quer montar ou migrar um clube de assinaturas para o BeanByte.
 7. **CTA Final + Footer**:
-   - Chamada final reforçando início rápido e rodapé com links de seção e informações institucionais do SubClub.
+   - Chamada final reforçando início rápido e rodapé com links de seção e informações institucionais do BeanByte.
 8. **Diálogo de Solicitação de Acesso (`PlanInterestDialogComponent`)**:
    - Acionado pelos CTAs do Hero, Planos e Banner Final (`MatDialog` + `ReactiveFormsModule`), pré-selecionando o plano/ciclo escolhido e exibindo confirmação via `MatSnackBar`.
