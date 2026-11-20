@@ -2,7 +2,6 @@ import {
   BenefitItem,
   FaqItem,
   FooterColumn,
-  HeroMetric,
   NavItem,
   PricingPlan,
   WorkflowStep,
@@ -21,27 +20,6 @@ export const HERO_TRUST_POINTS: string[] = [
   'Sem taxa extra por assinante',
   'Ambiente isolado para sua marca',
   'Implantação guiada em minutos',
-];
-
-export const HERO_METRICS: HeroMetric[] = [
-  {
-    label: 'Assinantes ativos',
-    value: '1.284',
-    trend: '+18% este mês',
-    icon: 'groups',
-  },
-  {
-    label: 'Receita recorrente',
-    value: 'R$ 89,4 mil',
-    trend: '96,4% retenção',
-    icon: 'trending_up',
-  },
-  {
-    label: 'Entregas do ciclo',
-    value: '412 boxes',
-    trend: 'Em separação',
-    icon: 'local_shipping',
-  },
 ];
 
 export const BENEFITS: BenefitItem[] = [

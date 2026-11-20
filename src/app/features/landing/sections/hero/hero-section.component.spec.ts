@@ -17,11 +17,12 @@ describe('HeroSectionComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should render primary headline and preview metrics', () => {
+  it('should render primary headline and trust points without preview panel', () => {
     const el: HTMLElement = fixture.nativeElement;
 
     expect(el.querySelector('h1')?.textContent).toContain('clube de assinaturas');
-    expect(el.querySelectorAll('.preview-metric').length).toBe(3);
+    expect(el.querySelectorAll('.hero__trust-item').length).toBe(3);
+    expect(el.querySelector('.preview-card')).toBeNull();
   });
 
   it('should emit startRequested when primary CTA is clicked', () => {

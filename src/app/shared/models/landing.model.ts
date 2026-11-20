@@ -5,13 +5,6 @@ export interface NavItem {
   anchor: string;
 }
 
-export interface HeroMetric {
-  label: string;
-  value: string;
-  trend: string;
-  icon: string;
-}
-
 export interface BenefitItem {
   icon: string;
   title: string;

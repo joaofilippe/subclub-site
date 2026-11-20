@@ -20,7 +20,7 @@ Alinhado ao domínio implementado no backend (`C:\projects\go\sub-club`), o SubC
 1. **Navbar (`#topo`)**:
    - Marca **SubClub**, links âncora (`Recursos`, `Como funciona`, `Planos`, `FAQ`), alternador de tema (claro/escuro) e CTA principal (`Começar agora`).
 2. **Hero (`#inicio`)**:
-   - Badge de posicionamento, headline direta sobre lançar e escalar um clube de assinaturas sem planilhas, subtítulo focado em gestão de assinantes, planos, produtos e entregas, CTAs (`Ver planos` e `Conhecer recursos`) e prévia visual estilizada do dashboard/métricas do clube.
+   - Badge de posicionamento, headline centralizada sobre lançar e escalar um clube de assinaturas sem planilhas, subtítulo focado em gestão de assinantes, planos, produtos e entregas, CTAs (`Começar agora` e `Conhecer recursos`) e pontos de confiança.
 3. **Benefícios / Recursos (`#recursos`)**:
    - Grid de cards usando Angular Material (`mat-card` + `mat-icon`) cobrindo os pilares reais da plataforma (Gestão de Assinantes, Planos Flexíveis, Catálogo & Envios, Multi-unidade / Equipe, Controle Financeiro e Operação Segura).
 4. **Como Funciona (`#como-funciona`)**:

@@ -1,5 +1,5 @@
 <section id="inicio" class="hero">
-  <div class="container hero__grid">
+  <div class="container">
     <div class="hero__content">
       <span class="hero__badge">
         <mat-icon aria-hidden="true">auto_awesome</mat-icon>
@@ -33,44 +33,6 @@
           </li>
         }
       </ul>
-    </div>
-
-    <div class="hero__visual" aria-label="Prévia do painel SubClub">
-      <mat-card class="preview-card">
-        <div class="preview-card__header">
-          <div>
-            <span class="preview-card__eyebrow">Operação ativa</span>
-            <h2 class="preview-card__title">Clube Café do Norte</h2>
-          </div>
-          <span class="preview-card__status">
-            <span class="preview-card__dot"></span>
-            Ciclo aberto
-          </span>
-        </div>
-
-        <div class="preview-card__metrics">
-          @for (metric of metrics; track metric.label) {
-            <div class="preview-metric">
-              <div class="preview-metric__icon">
-                <mat-icon aria-hidden="true">{{ metric.icon }}</mat-icon>
-              </div>
-              <div class="preview-metric__body">
-                <span class="preview-metric__label">{{ metric.label }}</span>
-                <strong class="preview-metric__value">{{ metric.value }}</strong>
-                <span class="preview-metric__trend">{{ metric.trend }}</span>
-              </div>
-            </div>
-          }
-        </div>
-
-        <div class="preview-card__footer">
-          <div class="preview-plan">
-            <span class="preview-plan__name">Plano Reserva Mensal</span>
-            <span class="preview-plan__meta">2x Grãos Especiais + Guia Sensorial</span>
-          </div>
-          <span class="preview-plan__price">R$ 119/mês</span>
-        </div>
-      </mat-card>
     </div>
   </div>
 </section>
