@@ -6,10 +6,13 @@ trigger: always_on
 
 Sempre que uma alteração no repositório for solicitada, siga estritamente estas regras:
 
-## 1. Verificação da Branch Atual
+## 1. Verificação da Branch Atual e Criação de Branches
 
 - Antes de realizar qualquer alteração em arquivos do projeto, verifique a branch atual (`git branch --show-current`).
-- Se estiver na branch `main` (ou `master`), **nunca** faça alterações diretamente nela. Crie e mude imediatamente para uma nova branch (`git checkout -b <type>/<short-description>`).
+- **Se estiver na branch `main` (ou `master`)**: **nunca** faça alterações diretamente nela. Crie e mude imediatamente para uma nova branch a partir da `main` (`git checkout -b <type>/<short-description>`).
+- **Se já estiver em uma branch de trabalho (`!= main`/`master`)**:
+  - Para ajustes, correções ou complementos alinhados ao objetivo da branch atual, **faça a alteração na própria branch** (não abra uma nova branch sem necessidade).
+  - Só considere criar uma nova branch (preferencialmente a partir da `main`) quando o assunto da solicitação for bem diferente do propósito da branch atual — e, antes de criar, **pergunte ao usuário** se ele prefere criar uma nova branch ou realizar a alteração na branch atual.
 
 ## 2. Padrão de Nomeação de Branches (em Inglês)
 

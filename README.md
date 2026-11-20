@@ -28,7 +28,7 @@ Site comercial do **SubClub** — plataforma SaaS para gestão de clubes de assi
 
 ## Documentação e Fluxo de Agentes
 
-- Regras e orquestração de agentes: [`.agents/rules/`](.agents/rules/) e [`CLAUDE.md`](CLAUDE.md).
+- Regras e orquestração de agentes: [`.agents/rules/`](.agents/rules/).
 - Documentação técnica e de produto (fonte da verdade):
   - [`docs/design/architecture.md`](docs/design/architecture.md)
   - [`docs/design/ui-and-theming.md`](docs/design/ui-and-theming.md)
