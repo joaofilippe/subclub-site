@@ -23,7 +23,7 @@ describe('HeroSectionComponent', () => {
 
     expect(bg).not.toBeNull();
     expect(bg.getAttribute('src')).toBe('images/background.jpg');
-    expect(el.querySelector('h1')?.textContent).toContain('clube de assinaturas');
+    expect(el.querySelector('h1')?.textContent).toContain('clube de assinatura');
     expect(el.querySelectorAll('.hero__trust-item').length).toBe(3);
     expect(el.querySelector('.preview-card')).toBeNull();
   });
